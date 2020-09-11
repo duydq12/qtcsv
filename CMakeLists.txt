@@ -15,7 +15,7 @@ else()
     # if cmake failed to find Qt5Core configuration file, set path manually:
     #list(APPEND CMAKE_PREFIX_PATH "/path/to/Qt/lib/cmake/Qt5Core/")
 
-    find_package(Qt5Core REQUIRED)
+    find_package(Qt5 COMPONENTS Core REQUIRED)
     set(QT_CORE_TARGET Qt5::Core)
 endif(USE_QT4)
 
